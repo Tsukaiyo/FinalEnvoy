@@ -1,0 +1,1 @@
+Started with Menu Credits branch, added in Emmett's level. That level didn't have a camera so I added one in. 

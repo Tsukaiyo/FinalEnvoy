@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &578850423941086099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5870526806443493598}
+  - component: {fileID: 2725147441336571682}
+  - component: {fileID: 4822546460265737999}
+  - component: {fileID: 5500162138613750205}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5870526806443493598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578850423941086099}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2725147441336571682
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578850423941086099}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &4822546460265737999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578850423941086099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21794b61a3c060c46b3036ca98c6d355, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundList:
+  - name: HITS
+    sounds:
+    - name: sword_hit_wood2
+      clip: {fileID: 8300000, guid: b75a75580c7089748acbf65341fcacf9, type: 3}
+    - name: sword_hit_wood1
+      clip: {fileID: 8300000, guid: c957a502b581e584f9970eca015c82c8, type: 3}
+    - name: Slice-Flesh
+      clip: {fileID: 8300000, guid: 5c9d4364bf5433243a7a007d881c9162, type: 3}
+    - name: Metallic-Whoosh
+      clip: {fileID: 8300000, guid: d0869a20acefe8c408c04687de507a26, type: 3}
+    - name: Rope-Cut-With-Knife
+      clip: {fileID: 8300000, guid: 2824a764a0d4dca4a8b212a84cd0253a, type: 3}
+    - name: Hit-Soft
+      clip: {fileID: 8300000, guid: 3dffdedaf99d6f241a07b9246f14fe00, type: 3}
+    - name: Arrow-Hit
+      clip: {fileID: 8300000, guid: 87565a6acff42134e92ed4e6374e46aa, type: 3}
+    - name: totally_a_lantern_hit
+      clip: {fileID: 8300000, guid: 99522add5b5349d49b94eff1d0da57d6, type: 3}
+    - name: Crossbow-Load-And-Release
+      clip: {fileID: 8300000, guid: 702149137c52be04496135f353c8605d, type: 3}
+  - name: DOORS
+    sounds:
+    - name: door_slam
+      clip: {fileID: 8300000, guid: f8f5b37e660597a47b5f035ab5870de3, type: 3}
+    - name: Door_Bang
+      clip: {fileID: 8300000, guid: 0f0f9dd6df24fb0448da34fd10557623, type: 3}
+    - name: Glass-Door-Slam-Close
+      clip: {fileID: 8300000, guid: 9677d993d4a0b0545b8bad12ebc9ea6f, type: 3}
+    - name: Heavy-Wood-Door-Creak-Close
+      clip: {fileID: 8300000, guid: 341fa36d045fa2a42afc0ca50f8a2b20, type: 3}
+    - name: Glass-Shatter-Upon-Impact-Metal
+      clip: {fileID: 8300000, guid: f03fb72950d901f49919f8e834f3cc9c, type: 3}
+    - name: Wooden-Door-Heavy-Hinge-Creaks
+      clip: {fileID: 8300000, guid: 258da83e0ecc3b343a1a30b158f48661, type: 3}
+    - name: Door-Lock-And-Unlock-With-Keys
+      clip: {fileID: 8300000, guid: d7c33d0eb27d62046bafc78aadc75030, type: 3}
+    - name: Keys-In-And-Out-Of-Door-Lock
+      clip: {fileID: 8300000, guid: 0a0d6fc55bda8584c846e833c19e6969, type: 3}
+  - name: MOB
+    sounds:
+    - name: angry_chant_stone_him
+      clip: {fileID: 8300000, guid: a8e0170904686f645aaa4e714ba726c3, type: 3}
+    - name: angry_chant_TRAITOR
+      clip: {fileID: 8300000, guid: 073b598a303a9524aad945c852748306, type: 3}
+    - name: Crowd-Male-Mob-Angry
+      clip: {fileID: 8300000, guid: a24b0db4b1202d342985d04e00882d20, type: 3}
+    - name: 
+      clip: {fileID: 0}
+    - name: 
+      clip: {fileID: 0}
+    - name: 
+      clip: {fileID: 0}
+  - name: ENVIRONMENTAL
+    sounds:
+    - name: clock_gear
+      clip: {fileID: 8300000, guid: 66e4bdd84fa82374283c1356fbed42f5, type: 3}
+    - name: stone_smash
+      clip: {fileID: 8300000, guid: 0ed919d0a3b8e574f98d1a73d3ef619f, type: 3}
+    - name: rubble_moving
+      clip: {fileID: 8300000, guid: b99402f69ed61b74e98f1b47b2327d0e, type: 3}
+    - name: walking_on_rubble
+      clip: {fileID: 8300000, guid: c803f64b5302ab64a81bc48ab9d7defd, type: 3}
+    - name: rummaging2
+      clip: {fileID: 8300000, guid: 60030da444b1b344ba83fbf5c030a606, type: 3}
+    - name: rummaging1
+      clip: {fileID: 8300000, guid: dbc8748f6bfac56459c7102526aa042a, type: 3}
+    - name: axe_behead
+      clip: {fileID: 8300000, guid: 09d22c1835f33cb4cad62a2bf3588f41, type: 3}
+    - name: rain
+      clip: {fileID: 8300000, guid: 2bab14df1d8194f47a47be0a2cec945d, type: 3}
+    - name: Concrete-Block-Impact
+      clip: {fileID: 8300000, guid: 7cf79338917fe644d944083f2451b73c, type: 3}
+    - name: Concrete-Block-Impact
+      clip: {fileID: 8300000, guid: 7cf79338917fe644d944083f2451b73c, type: 3}
+  - name: FIRE
+    sounds:
+    - name: fire_crackle
+      clip: {fileID: 8300000, guid: 6f1945794885e154ebf50bae7fbf2164, type: 3}
+    - name: Whoosh-Fantasy-Magic
+      clip: {fileID: 8300000, guid: b374a4095b32350428d746734c098163, type: 3}
+    - name: FireBall
+      clip: {fileID: 8300000, guid: 407e38d2fbb523d42b0aa46902b5bf51, type: 3}
+    - name: Fire-Match-Being-Lit
+      clip: {fileID: 8300000, guid: a181e6e85557fa04da98b31e65b626f7, type: 3}
+--- !u!114 &5500162138613750205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578850423941086099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d7416e6f243be499e4b8c593683090, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackList:
+  - {fileID: 8300000, guid: d6b4b371fe9508e479eda2a738e7ab61, type: 3}
+  - {fileID: 8300000, guid: 6d207deec88081e4181fa7adf87bdf8b, type: 3}
+  - {fileID: 8300000, guid: 3f6641e39e2ddcb4da6c00f1bc1a5f42, type: 3}

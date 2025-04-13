@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/PlayerSetupExample.unity.meta
+guid: cc22678a5e3bc8a48a1680819c1b8392
+========
+guid: bc2f8ae986a0b67419080678316a5039
+>>>>>>>> revert-e7a34828:Assets/Scenes/LevelOneScene.unity.meta
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

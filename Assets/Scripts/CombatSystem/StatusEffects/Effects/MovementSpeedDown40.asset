@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1c41ebe26675a4ca4886c0b2ad6bf8, type: 3}
+  m_Name: MovementSpeedDown40
+  m_EditorClassIdentifier: 
+  name: Movement Speed Down
+  description: -40%
+  isActive: 0
+  effectType: 3
+  modifierPercent: -40
+  damageOverTime: 0
+  initialValue: 0

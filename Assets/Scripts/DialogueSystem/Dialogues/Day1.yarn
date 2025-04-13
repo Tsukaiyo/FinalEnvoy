@@ -1,0 +1,321 @@
+﻿title: CampfireB_13
+tags: cutscene
+---
+Alaine: … #line:0751a13 #KnightSprite_NeutralPose_ConcernedFace 
+Alaine: My arm! My arm… #line:0cc2322 #KnightSprite_NeutralPose_HurtFace
+Alaine: Oh… Oh… No… #line:0f0a537 #KnightSprite_NeutralPose_HurtFace
+===
+
+title: CampfireC_13
+tags: cutscene
+---
+Eléonore: I'm no physician, but you must rest. My guard is no good overtaxed. #line:00aa743 #PrincessSprite_NeutralPose_NeutralFace //I'll suggest splitting the lines here
+===
+
+title: CampfireD_13
+tags: cutscene
+---
+Eléonore: Ouch! #line:04c9133 #PrincessSprite_NeutralPose_HurtFace
+Alaine: Princess… I don't remember… what happened to my arm…  #line:0707431 #KnightSprite_NeutralPose_ConcernedFace //Changed "What" to "what" 
+Eléonore: Oh, I… You were trapped under the rubble, there was no other way, and I- I… came across a surgeon who had also fled the castle. #line:0dcbe71 #PrincessSprite_CrossedPose_ScaredFace
+Alaine: I… I… understand. #line:0d924e8 #KnightSprite_NeutralPose_ConcernedFace
+<<wait 2>>
+Alaine: I suppose they did… good work… It… it doesn't even hurt. #line:0d0ca81 #KnightSprite_HandPose_ConcernedFace //Changed "It" (second) to "it"
+<<wait 1>>
+Alaine: We should move. It is best not to linger. #line:056e259 #KnightSprite_NeutralPose_NeutralFace
+Alaine: There's a village up ahead where we can gather supplies. #line:06cff40 #KnightSprite_NeutralPose_NeutralFace
+===
+
+title: WestWoods_14
+tags: gameplay
+---
+Alaine: Are you alright? #line:06ae545 #KnightSprite_NeutralPose_NeutralFace
+Eléonore: I'm- I'm fine. I just haven't seen… anything like this before. #line:09d8749 #PrincessSprite_NeutralPose_ScaredFace
+Alaine: …It'll be alright. #line:091cadf #KnightSprite_NeutralPose_HappyFace
+Eléonore: Hah. Thank you, guard. #line:0b3e5bf #PrincessSprite_NeutralPose_HappyFace
+===
+
+title: VillageA_15
+tags: cutscene
+---
+Blacksmith: A royal guard…   #line:0d3a0a5 
+Blacksmith: They say the tenacity of the Gendarme can only be extinguished by a good death, fighting at the King's side.  #line:0b013c7 
+Alaine: The King is dead. #line:0e1e2b3 
+Blacksmith: Aye, and yet here you are. #line:058bec1 
+Alaine: Here I am… #line:0e5375c 
+Blacksmith: It seems you fought hard and well. #line:0c15cab 
+Alaine: My… arm. If only I could say I lost it in battle… #line:0446237 
+Blacksmith: Whether you lost it to gnashing teeth or to escape the steel jaws of a trap, you are alive, and our mutual friend would like it to remain that way. #line:032c9d0 
+Alaine: A mutual friend? #line:0e27b69 #KnightSprite_NeutralPose_ThinkingFace
+Blacksmith: Ah, let me have a look.  #line:0a4adf6 //Changed "Let" to "let"
+===
+
+title: VillageB_15
+tags: cutscene
+---
+Blacksmith: Whaddya know of essence? #line:0f94991 
+Alaine: I've never heard of it. #line:06920db 
+Blacksmith: Essence is created by life and resides in all living creatures. It reflects the core of one's being, making them a conduit for one type. #line:02202b3 
+Blacksmith: Essence flows through our world, knight. It's the lifeblood we run on.  #line:0f322f4 //Changed "Knight" to "knight"
+===
+
+title: VillageC_15
+tags: cutscene
+---
+Blacksmith: Ye could probably wield 'em all- with practice. #line:090c1a5 
+Alaine: I- I don't know. #line:0f7140b 
+===
+
+title: VillageD_15
+tags: cutscene
+---
+Blacksmith: -Ah… Well, I can understand that. Essence ain't my making, but my trade. I'll be here if you change your mind. #line:0a65fd4 
+===
+
+title: WestEndA_16
+tags: gameplay
+---
+Eléonore: Hmpf.  #line:04a2ae2 //Added for Eléonore's huff
+Eléonore: I don't like the look of him. Tread lightly. If not for your own sake, for mine. #line:09b4cbc 
+    ->This isn't your choice.  #line:06e7ecd //Added period
+        Alaine: This isn't your choice. #line:0273608 
+        Eléonore: Then you'd better make the right one. #line:0e7e4d7 
+        <<set $relationship += 1>>
+    ->I understand. I'll figure out what he wants. #line:0e4e7ca
+        Alaine: I understnad. I'll figure out what he wants. #line:0d02e8a 
+        Eléonore: Be cautious, that's all I ask. #line:0fa8da8 
+        <<set $relationship += 1>>
+    ->What do you know about essence? #line:06b91b4 
+        Alaine: What do you know about essence? #line:038dad6 
+        Eléonore: Hmm, “essence?”… I'm afraid I don't have the faintest idea what he was babbling on about.  #line:08d4fce 
+<<save_game SaveManager>>
+===
+
+title: VillageE_17
+tags: cutscene
+---
+Blacksmith: Aye, you're back. Are you ready now? #line:08cdb5b 
+Alaine: Make this quick. #line:069894f 
+Blacksmith: You can tell yer friend I don't bite. #line:0d9a0d6 
+===
+
+title: VillageF_17
+tags: cutscene
+---
+Eléonore: We will not hear anymore. Guard, I forbid you from doing this! #line:04d70c2 #PrincessSprite_CrossedPose_AngryFace
+Blacksmith: Aye, she can speak for herself. Can't you, lass? #line:0fd4f3a 
+Blacksmith: Here you go, this'll help the pain. #line:0d67efa 
+===
+
+title: VillageG_17
+tags: cutscene
+---
+Alaine: Your Highness, you can let go. #line:029580f #KnightSprite_NeutralPose_ConcernedFace
+Eléonore: This is a mistake! #line:06c314c #PrincessSprite_CrossedPose_AngryFace
+===
+
+title: VillageH_17
+tags: cutscene
+---
+Blacksmith: Aye, you're awake. I've got some wares that would suit you.  #line:01c5b52 
+===
+
+title: VillageI_17
+tags: cutscene
+---
+Blacksmith: That arm of yours needs a proper test, knight. Cut these dummies down, and I'll tell you if it holds. #line:0b24538 //Changed "Knight" to "knight"
+===
+
+title: VillageJ_17
+tags: cutscene
+---
+Blacksmith: Ah, good job! 'Till we meet again, knight.  #line:033eb2a //Changed "Knight" to "knight"
+===
+
+title: WestEndB_18
+tags: cutscene
+---
+    ->What are you doing? #line:0c6450c 
+        Alaine: What are you doing? #line:01b7e38 
+        <<jump WestEndA_16>>
+    ->Did you see a lady run by just now? #line:019c762 
+        Alaine: Did you see a lady run by just now? #line:0b765aa 
+        Remy: By The Divine! Ya scared me. Yeah, the lady was running toward the East End o'town.  #line:08df8c8 //Changed "the Divine" to "The Divine"
+===
+
+title: WestEndC_18
+tags: cutscene
+---
+Remy: Leaving! Like everybody else! #line:02ec0d3 
+Remy: You must have seen the soldiers marching in. They're surrounding the village as we speak. #line:0e374df 
+Remy: Three hours- the soldiers gave us three hours to cut and run, on the decision of The Divine, I bet. Pledged be.  #line:070040c 
+Alaine: Pledged be. #line:0aec7ce    
+    ->How do you know the guards work on behalf of The Divine? #line:02a4332 
+        Alaine: How do you know the guards work on behalf of The Divine? #line:069a0e2 
+        <<jump WestEndC1_16>>
+===
+
+title: WestEndC1_18
+tags: cutscene
+---
+Remy: All the guards serve the Royal Family, so they serve The Divine.  #line:0c620b3 
+Remy: Now, I don't see them going to worship at any Sanctums, but they believe. I know it. #line:075eb35 
+Remy: Besides, they warned us about the revolutionaries, I don't know what we woulda done without a warning. #line:0c48571 
+    ->Why do they march here? #line:09dd90d 
+        Alaine: Why do they march here? #line:071a102 
+        <<jump WestEndC2_16>>
+===
+
+title: WestEndC2_18
+tags: cutscene
+---
+Remy: To meet their brothers in arms–No! Of course not. #line:0cc9f45 
+Remy: They are here to meet with the Revolutionaries and fight. #line:0189902 
+    ->A fight? Here? #line:0fac149 
+        Alaine: A fight? Here? #line:0748106 
+        <<jump WestEndC3_16>>
+===
+
+title: WestEndC3_18
+tags:
+---
+Remy: The Revolutionaries will stop at nothing. The Royal Guard… well, they're our last hope.  #line:088ddbf //Changed "Well" to "well"
+Remy: Say, your uniform looks a lot like thier uniform.  #line:0f9fddc 
+===
+
+title: EastEnd_19
+tags: cutscene
+---
+Eléonore: I see you've got a new arm. #line:073d6f7 
+Alaine: I do. #line:0eaa9b3 
+Eléonore: Hmph. We'd better keep going.  #line:0d2ce49 //Changed "We" to "We'd"
+===
+
+title: WestEndD_20
+tags: gameplay
+---
+Eléonore: Excuse me! #line:0340cdc 
+Alaine: Be careful Princess! #line:0b786db 
+Alaine: Follow my lead! #line:0c6f3cb 
+===
+
+title: DeepWoodsA_21
+tags: gameplay
+---
+Alaine: Your Highness, step back. #line:0c94080 
+===
+
+title: DeepWoodsB_22
+tags: gameplay
+---
+: Item Obtained: Bruin's Claw Dagger. #line:008da92 //This will be dealt with later, with input on how exactly to stylize it, changed "BRUINS" to "BRUIN'S"
+===
+
+title: DeepWoodsC_22
+tags: gameplay
+---
+Alaine: Who goes there? #line:091406f 
+Reynard: It's only little old me. #line:0d507af 
+===
+
+title: DeepWoodsD_22
+tags: gameplay
+---
+Alaine: Who are you? #line:054b76a 
+Reynard: How many talking animals do you encounter on a daily basis, Miss?  #line:0993d40 
+Reynard: Hahahaha… #line:0b92403
+Alaine: You're the fox. Of The Divine. #line:00172eb 
+Reynard: Maybe I am. #line:08a899b 
+Eléonore: Leave. Nothing about you is Divine. #line:0bcc9e6 #PrincessSprite_CrossedPose_AngryFace
+Alaine: Princess? #line:0630c9c #KnightSprite_HandPose_ConcernedFace
+Eléonore: He isn't who the legends say he is. #line:0c6baa8 
+Reynard: That feels rather harsh, Princess. #line:0f39e19 
+Alaine: Have you come to stop the revolution? #line:0151b65 
+Reynard: No, no. Not exactly. Not at all, really. I'm here as a spectator. #line:0faf76d 
+Reynard: I just wanted to say hello, let you know to keep things interesting. #line:080d17c 
+Alaine: …What? #line:0e4b637 
+Eléonore: I've asked you to leave. Please do. #line:0dbbdb1 #PrincessSprite_CrossedPose_NeutralFace
+Alaine: What do you mean? #line:0a07a50 
+Reynard: I don't answer to you, Princess. But, as time goes by, I am getting rather bored. #line:072336f 
+Alaine: How can you be The Fox, of The Divine, and be so… so…  #line:0a8845b
+Reynard: Careless? Cruel? Hm, well, we're people- or animals- too. Don't I get to have fun every now and then? #line:0fc4212 
+Reynard: Let me tell you, Alaine of Montmarie, you won't get far in this world without fun. #line:0df76ee 
+Reynard: Part of that fun puts people in harm's way. #line:0ffde4d 
+Alaine: I'll never harm innocent people. I have a duty to the people of this nation, as do you.  #line:00ebe30 
+Reynard: Duty, hm? You should know about the workings of this world. Essence flows through your blood now. Use it. Learn it.  #line:05086e2 
+Alaine: I… #line:0851e36 
+Reynard: You are a fine knight. #line:022e358 
+===
+
+title: DeepWoodsE_22
+tags: gameplay
+---
+Reynard: We're so similar, you and I. Don't let a pesky thing like duty get to you. #line:0379c0f 
+Alaine: You are a disgrace to- #line:004326b #KnightSprite_NeutralPose_AngryFace
+===
+
+title: DeepWoodsF_22
+tags: gameplay
+---
+Eléonore: Guard, I- #line:0634416 
+===
+
+title: DeepWoodsG_22
+tags: gameplay
+---
+Remy: There's a beast living 'round here. Ya shouldn't be wanderin'! Ya wanna ride? #line:060784d 
+===
+
+title: DeepWoodsH_21
+tags:
+---
+Eléonore: I never thought I'd sleep beneath the stars like a common traveller. #line:0c7784a 
+Alaine: … #line:05e9ff6 #KnightSprite_NeutralPose_NeutralFace
+Eléonore: I must say it's probably been the worst part of this whole situation. The damp, the bugs, the dirt- #line:0a19059 
+Alaine: The worst part? #line:09b327c #KnightSprite_HandPose_AngryFace
+===
+
+title: DeepWoodsI_21
+tags:
+---
+Eléonore: You resent me. #line:0051162 
+Alaine: Perhaps I do. #line:050700a 
+Eléonore: Because of your arm. You must know that if there had been another way, I wouldn't have- #line:03b5ed6 
+Alaine: Because I spent a month as your guard instead of fighting in the field where I belonged. #line:0439153 
+Alaine: A mind-numbing month playing nursemaid – standing outside your door, walking you through the gardens. #line:0a609de 
+Alaine: I did my duty; I did what was asked of me without complaint, and yet I am rewarded with the loss of a limb. #line:0efa07e 
+Eléonore: You think I asked for that? #line:040d9d8 
+Alaine: No, but you never made it easier. You were spoiled, selfish, and never listened. You treated me like a servant, not a knight. #line:072640b 
+Eléonore: And you're brutish, crude, and as thick-headed as the men in my father's court. #line:0602017 #PrincessSprite_CrossedPose_AngryFace
+Eléonore: You never even tried to see me as anything but a spoiled princess. #line:0160463 #PrincessSprite_NeutralPose_AngryFace //Changed "Princess" to "princess"
+Eléonore: You're not the only one who's lost something, Alaine. I lost my family. My kingdom. My future. #line:0d1003f 
+Alaine: And yet, you still sit like a lady at court, complaining about dirt on your cloak. #line:0f0cc33 
+Eléonore: And should I confide my sorrows to you? #line:0d5a267 #PrincessSprite_CrossedPose_AngryFace
+Eléonore: Tell me something, Alaine. If you despise me so much, why are you still here? #line:0f3bf2c #PrincessSprite_CrossedPose_ThinkingFace
+Eléonore: The castle has fallen. No one would fault you for leaving me behind. #line:010e60d #PrincessSprite_CrossedPose_NeutralFace
+Alaine: … #line:02b0752 #KnightSprite_HandPose_ThinkingFace
+Alaine: It is my duty. #line:0871b6a #KnightSprite_HandPose_ConcernedFace
+Eléonore: …Is there not more to what drives you? #line:06fc606 #PrincessSprite_CrossedPose_ThinkingFace
+Alaine: I don't want to talk about this anymore. #line:0295094 #KnightSprite_NeutralPose_NeutralFace
+Eléonore: Fine. #line:0b25cea #PrincessSprite_CrossedPose_AngryFace
+    ->Attempt to ease the tension. #line:032345c 
+        <<set $relationship += 1>>
+        <<jump DeepWoodsIA_21>>
+    ->Let the resentment linger. #line:0c331fc 
+        <<set $relationship -= 1>>
+        <<jump DeepWoodsIB_21>>
+===
+
+title: DeepWoodsIA_21
+tags:
+---
+Alaine: Perhaps tomorrow we will try again. #line:06df215 
+Eléonore: Perhaps. #line:0916221 
+===
+
+title: DeepWoodsIB_21
+tags:
+---
+Alaine: There's nothing left to say. #line:0c6497e 
+Eléonore: Then don't say anything at all. #line:0043088 
+===

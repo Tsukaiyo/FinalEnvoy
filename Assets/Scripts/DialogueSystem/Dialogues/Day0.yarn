@@ -1,0 +1,172 @@
+﻿title: ThroneRoom_01
+tags: cutscene
+---
+Alaine: Your Highness, we can't stay here any longer! #line:Day0_Alaine_1 #KnightSprite_NeutralPose_HurtFace
+<<wait 1>>
+Eléonore: It's so… empty. Where is everyone? #line:Day0_Eleonore_2 #PrincessSprite_NeutralPose_ScaredFace
+Alaine: Your Highness! #line:Day0_Alaine_? #KnightSprite_NeutralPose_HurtFace
+Eléonore: Ugh! We have to go, now! #line:Day0_Eleonore_3 #PrincessSprite_NeutralPose_ScaredFace
+===
+
+title: MainEntranceA_02
+tags: gameplay
+---
+Alaine: Stop here. #line:Day0_Alaine_4 #KnightSprite_NeutralPose_NeutralFace
+<<jump MainEntranceB_02>>
+===
+
+title: MainEntranceB_02
+tags: gameplay
+---
+Revolutionary: There she is! Let's end this! #line:Day0_Revolutionary_5
+Alaine: Your Highness, if you want to live, get behind me! #line:Day0_Alaine_6 #KnightSprite_NeutralPose_AngryFace
+===
+
+title: MainEntranceC_02
+tags: gameplay
+---
+Gendarme: Stop them! #line:Day0_Gendarme_7
+===
+
+title: MainEntranceD_02
+tags: gameplay
+---
+Eléonore: Eugh! #line:Day0_Eleonore_8 #PrincessSprite_NeutralPose_HurtFace
+===
+
+title: MainEntranceE_02
+tags: gameplay
+---
+: Item Obtained: Royal Key. #line:Day0_RoyalKey
+===
+
+title: MainEntranceF_02
+tags: gameplay
+---
+Alaine: Locked. #line:Day0_Alaine_9 #KnightSprite_NeutralPose_NeutralFace
+: Players must find the Royal Key to unlock the door. #line:Day0_Locked
+===
+
+title: BallroomMezzanine_03
+tags: gameplay
+---
+Alaine: Your Highness, I could use a hand. #line:Day0_Alaine_10 #KnightSprite_NeutralPose_NeutralFace
+Eléonore: Right! #line:Day0_Eleonore_11 #PrincessSprite_NeutralPose_NeutralFace
+===
+
+title: StainedGlassHallway_04
+tags: gameplay
+---
+Alaine: From the Order of The Divine. Hypocrites. #line:Day0_Alaine_12-1 #KnightSprite_NeutralPose_NeutralFace
+Alaine: Even as they condemned magic, they bottled its power for themselves. #line:Day0_Alaine_12-2 #KnightSprite_NeutralPose_AngryFace
+Eléonore: And you trust it? #line:Day0_Eleonore_13 #PrincessSprite_CrossedPose_ThinkingFace
+Alaine: I trust that I'm bleeding, and this is better than nothing. #line:Day0_Alaine_14 #KnightSprite_NeutralPose_NeutralFace
+=== 
+
+title: RoyalChambers_05
+tags: cutscene
+---
+Eléonore: Well, don't just stand there. Help me over! #line:Day0_Eleonore_15 #PrincessSprite_CrossedPose_ThinkingFace
+Alaine: You could ask politely, Princess! #line:Day0_Alaine_16 #KnightSprite_NeutralPose_ConcernedFace
+===
+
+title: AtriumA_06a
+tags: cutscene
+---
+Eléonore: Father… #line:Day0_Eleonore_17 #PrincessSprite_NeutralPose_ScaredFace
+Revolutionary Leader: LOOK! ALL OF YOU, LOOK! #line:Day0_Revolutionary_18
+===
+
+title: AtriumB_06a
+tags: cutscene
+---
+Revolutionary Leader: Is this a king who stands before me? Is this who leads our nation?  #line:Day0_Revolutionary_19 //Changed "King" to "king"
+Revolutionary Leader: NO! This is a coward. A traitor. #line:Day0_Revolutionary_20-1 
+Revolutionary Leader: You have let us suffer for far to long. Do you know how many of us can't eat, can't live? #line:Day0_Revolutionary_20-2 
+King: Then claim my life. I will not relent to anyone of a lesser majesty.  #line:Day0_King_21
+Revolutionary Leader: You mock The Divine with your ugly words. Tell The Fox I say "hello".  #line:Day0_22
+===
+
+title: AtriumC_06b
+tags: cutscene
+---
+Eléonore: No… #line:Day0_Eleonore_23 #PrincessSprite_NeutralPose_ScaredFace
+Eléonore: (muffled cry) #line:Day0_Eleonore_MuffledCry #PrincessSprite_NeutralPose_ScaredFace
+Revolutionary Leader: The princess is still here. Find her and bring her to me. We must end their bloodline. #line:Day0_Revolutionary_25 //Changed "Princess" to "princess"
+===
+
+title: AtriumD_06c
+tags: gameplay
+--- 
+Alaine: Princess, get up, we have to leave! #line:Day0_Alaine_26 #KnightSprite_NeutralPose_AngryFace??
+Eléonore: My room… we have to go to my room… #line:Day0_Eleonore_27 #PrincessSprite_NeutralPose_ScaredFace
+===
+
+title: RoyalChambersA_08
+tags: gameplay
+--- 
+Eléonore: I have to find it. I have to find my lantern. #line:Day0_Eleonore_28 #PrincessSprite_NeutralPose_ScaredFace
+Alaine: Princess. #line:Day0_Alaine_29 #KnightSprite_NeutralPose_NeutralFace
+    ->I'll escort you to your brother. #line:Day0_Alaine_Choice_1
+        Alaine: I'll escort you to your brother. You have nothing to worry about. #line:Day0_Alaine_30 #KnightSprite_NeutralPose_NeutralFace
+        Eléonore: …Thank you. #line:Day0_Eleonore_32 #PrincessSprite_NeutralPose_RomanticFace
+        <<set $relationship += 1>>
+    ->You need to calm down.  #line:Day0_Alaine_Choice_2 //This was shortened and the full text is in the next line
+        Alaine: You need to calm down. You're the Princess of Vanniere, a leader. You can't get emotional like this. #line:Day0_Alaine_31 #KnightSprite_NeutralPose_NeutralFace
+        Eléonore: …I suppose you're right. #line:Day0_Eleonore_33 #PrincessSprite_NeutralPose_NeutralFace
+        <<set $relationship -= 1>>
+        <<set $dutyAlignment += 1>>
+<<save_game SaveManager>>
+===
+
+title: RoyalChambersB_08
+tags: gameplay
+---
+Eléonore: My lantern will guide us. My brother mans a military outpost past the woods. Once we get there, we'll be safe. #line:Day0_Eleonore_34 #PrincessSprite_CrossedPose_NeutralFace
+Alaine: We'd better get going.  #line:Day0_Alaine_35 #KnightSprite_NeutralPose_NeutralFace //Changed "we better" to "we'd better"
+Eléonore: …Well then, let's move. #line:Day0_Eleonore_36 #PrincessSprite_NeutralPose_NeutralFace
+===
+
+title: AtriumE_10
+tags: gameplay
+---
+Eléonore: Every castle has a wealth of secret passages. #line:Day0_Eleonore_37 #PrincessSprite_NeutralPose_NeutralFace
+===
+
+title: AtriumF_10
+tags: gameplay
+---
+Eléonore: This lantern reveals what goes unseen. It shall help us find the path. #line:Day0_Eleonore_38 #PrincessSprite_CrossedPose_NeutralFace
+===
+
+title: UndergroundPassageA_011
+tags: gameplay
+---
+Alaine: What was that?! #line:Day0_Alaine_39 #KnightSprite_NeutralPose_AngryFace
+Eléonore: I do not know… #line:Day0_Eleonore_40 #PrincessSprite_CrossedPose_NeutralFace
+Eléonore: Maybe The Divine have finally answered my calls… #line:Day0_Eleonore_41 #PrincessSprite_NeutralPose_RomanticFace
+===
+
+title: UndergroundPassageB_09
+tags: gameplay
+---
+Alaine: We have to leave- now! Come on. #line:Day0_Alaine_42 #KnightSprite_NeutralPose_ConcernedFace?? //In the document, "now" is underlined, which I assume means the text should appear differently
+===
+
+title: UndergroundPassageC_10
+tags: gameplay
+---
+Alaine: Your Highness… Eléonore? #line:Day0_Alaine_43 #KnightSprite_NeutralPose_HurtFace
+    ->Eléonore, are you alright? #line:Day0_Alaine_Choice_3
+        Alaine: Eléonore, are you alright?  #line:Day0_Alaine_44
+        <<set $relationship += 1>>
+    ->Have you left me? #line:Day0_Alaine_Choice_4
+        Alaine: Have you left me? #line:Day0_Alaine_45
+        <<set $relationship -= 1>>
+===
+
+title: UndergroundPassageD_10
+tags: gameplay
+---
+Eléonore: I'm sorry, guard. #line:Day0_Eleonore_46 #PrincessSprite_NeutralPose_NeutralFace
+===

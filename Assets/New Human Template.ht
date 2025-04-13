@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1105 &110500000
+HumanTemplate:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Human Template
+  m_BoneTemplate:
+    Chest: c_spine_02.x
+    Head: head.x
+    Hips: c_pos
+    Left Index Distal: c_index1.l
+    Left Index Intermediate: c_index1_rot.l
+    Left Index Proximal: c_index1_base.l
+    Left Little Distal: c_pinky1.l
+    Left Little Intermediate: c_pinky1_rot.l
+    Left Little Proximal: c_pinky1_base.l
+    Left Middle Distal: c_middle1.l
+    Left Middle Intermediate: c_middle1_rot.l
+    Left Middle Proximal: c_middle1_base.l
+    Left Ring Distal: c_ring1.l
+    Left Ring Intermediate: c_ring1_rot.l
+    Left Ring Proximal: c_ring1_base.l
+    Left Thumb Distal: c_thumb1.l
+    Left Thumb Intermediate: c_thumb1_rot.l
+    Left Thumb Proximal: c_thumb1_base.l
+    LeftFoot: foot.l
+    LeftHand: hand.l
+    LeftLowerArm: forearm.l
+    LeftLowerLeg: leg_fk.l
+    LeftShoulder: c_shoulder.l
+    LeftToes: toes_01.l
+    LeftUpperArm: arm_twist.l
+    LeftUpperLeg: c_thigh_fk.l
+    Neck: neck.x
+    Right Index Distal: c_index1.r
+    Right Index Intermediate: c_index1_rot.r
+    Right Index Proximal: c_index1_base.r
+    Right Little Distal: c_pinky1.r
+    Right Little Intermediate: c_pinky1_rot.r
+    Right Little Proximal: c_pinky1_base.r
+    Right Middle Distal: c_middle1.r
+    Right Middle Intermediate: c_middle1_rot.r
+    Right Middle Proximal: c_middle1_base.r
+    Right Ring Distal: c_ring1.r
+    Right Ring Intermediate: c_ring1_rot.r
+    Right Ring Proximal: c_ring1_base.r
+    Right Thumb Distal: thumb1.r
+    Right Thumb Intermediate: c_thumb1.r
+    Right Thumb Proximal: c_thumb1_rot.r
+    RightFoot: foot.r
+    RightHand: hand.r
+    RightLowerArm: forearm.r
+    RightLowerLeg: c_thigh_fk.r
+    RightShoulder: c_shoulder.r
+    RightToes: toes_01.r
+    RightUpperArm: arm_twist.r
+    RightUpperLeg: c_root.x
+    Spine: c_spine_01.x
+    UpperChest: c_spine_03.x
