@@ -55,8 +55,6 @@ public class Character : MonoBehaviour, ISaveManager
     [HideInInspector]
     public Vector3 playerVelocity;
 
-    int interactableLayer;
-
 
     // Start is called before the first frame update
     private void Start()
@@ -67,8 +65,6 @@ public class Character : MonoBehaviour, ISaveManager
         cameraTransform = Camera.main.transform;
 
         movementSM = new StateMachine();
-        Debug.Log("next");
-        Debug.Log(movementSM);
         standing = new StandingState(this, movementSM);
         jumping = new JumpingState(this, movementSM);
         crouching = new CrouchingState(this, movementSM);
@@ -86,10 +82,6 @@ public class Character : MonoBehaviour, ISaveManager
         // Migration from player controller
         interactAction = playerInput.actions["Interact"];
         _sphereCollider = GetComponent<SphereCollider>();
-
-        // Interactable collision
-        interactableLayer = LayerMask.GetMask("Interactable");
-
     }
 
     private void Update()
@@ -116,18 +108,14 @@ public class Character : MonoBehaviour, ISaveManager
 
         Vector3 boxSize = new Vector3(1f, 1f, interactDistance / 2);
 
-        Collider[] hits = Physics.OverlapBox(boxCenter, boxSize, transform.rotation, interactableLayer);
+        Collider[] hits = Physics.OverlapBox(boxCenter, boxSize, transform.rotation);
 
         foreach (Collider hit in hits)
         {
-            var interactable = hit.GetComponent<IInteractable>();
+            IInteractable interactable = hit.GetComponent<IInteractable>();
             if (interactable != null)
             {
                 interactable.interact(gameObject);
-            }
-            else
-            {
-                Debug.Log("No interactable detected.");
             }
         }
     }
@@ -137,16 +125,10 @@ public class Character : MonoBehaviour, ISaveManager
     /// <param name="other">Used to retrieve IInteractable component</param>
     private void OnTriggerEnter(Collider other)
     {
-        IInteractable interactable;
-        if (other.gameObject.layer == LayerMask.NameToLayer("Interactable"))
-        {
-            interactable = other.GetComponent<IInteractable>();
+        var interactable = other.gameObject.GetComponent<IInteractable>();
+
+        if (interactable != null)
             _prompt.OpenPrompt(interactable.Prompt);
-            Debug.Log("Interactable: " + other.gameObject.name + " collided with player....");
-        }
-        
-       Debug.Log(other.gameObject.name + " collided with player....");
-        
     }
 
     private void OnTriggerExit(Collider other)
@@ -175,12 +157,5 @@ public class Character : MonoBehaviour, ISaveManager
         saveData.playerPos = transform.position;
         saveData.quests["Quest 1"] = (int)transform.position.x;
         saveData.quests["Quest 2"] = (int)transform.position.z;
-    }
-    void OnDrawGizmos()
-    {
-        Vector3 boxCenter = transform.position + transform.forward * (interactDistance / 2);
-        Vector3 boxSize = new Vector3(1f, 1f, interactDistance / 2);
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireCube(boxCenter, boxSize);
     }
 }
